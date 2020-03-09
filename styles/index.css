@@ -53,7 +53,6 @@ body {
     max-height: 251px;
     height: 100%;
     margin-bottom: 144px;
-    /* position: relative; */
     justify-content: space-between;
 }
 
@@ -77,10 +76,6 @@ body {
     font-size: 18px;
     font-style: italic;
     color: #979797;
-    /* margin-left: 190px; */
-    /* position: absolute;
-    bottom: 0;
-    right: 100; */
 }
 
 .header_line {
@@ -187,9 +182,12 @@ body {
 .grid_container_one {
     display: grid;
     grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: 1fr;
-    margin-top: 91px;
+    grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
+    margin-top: 90px;
+    margin-bottom: 101px;
+    max-height: 106px;
+    height: 100%;
 }
 
 .grid_element_one_text {
@@ -199,27 +197,39 @@ body {
     font-weight: bold;
 }
 
-.grid_element_one_list_one {
-    grid-column: 10 / span 2;
-    grid-row: 1 / 3;
-    font-size: 18px;
-    /* align-items: center; */
-    
+.grid_element_one_middle_one {
+    grid-column: 10 / 12;
+    grid-row: 1 / 2;
 }
 
-.grid_element_one_list_two {
-    grid-column: 13 / span 2;
-    grid-row: 1 / 3;
-    font-size: 18px;
-    /* align-items: center; */
+.grid_element_one_middle_two {
+    grid-column: 10 / 12;
+    grid-row: 2 / 3;
 }
 
-.grid_list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
+.grid_element_one_middle_three {
+    grid-column: 10 / 12;
+    grid-row: 3 / 4;
+}
+
+.grid_element_one_right_one {
+    grid-column: 13 / 15;
+    grid-row: 1 / 2;
+}
+
+.grid_element_one_right_two {
+    grid-column: 13 / 15;
+    grid-row: 2 / 3;
+}
+
+.grid_element_one_right_three {
+    grid-column: 13 / 15;
+    grid-row: 3 / 4;
+}
+
+.text_18 {
+    font-size: 18px;
+    color: #979797;
 }
 
 .grid_container_two, .grid_container_three {
@@ -229,12 +239,18 @@ body {
     grid-gap: 15px;
     width: 100%;
     max-height: 315px;
-    margin-top: 148px;
+    padding-top: 47px;
+    border-top: 2px solid #D8D8D8;
+    margin-bottom: 55px;
 }
 
 .grid_element_two_left, .grid_element_three_left {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+    
+}
+
+.text_bold_22 {
     font-size: 22px;
     font-weight: bold;
 }
@@ -242,45 +258,46 @@ body {
 .grid_element_two_middle_one, .grid_element_three_middle_one {
     grid-column: 6 / 8;
     grid-row: 1 / 2;
-    font-size: 18px;
-    font-weight: bold;
 }
+
 
 .grid_element_two_middle_two, .grid_element_three_middle_two {
     grid-column: 6 / 8;
     grid-row: 7 / 8;
-    font-size: 18px;
-    font-weight: bold;
 }
 
 .grid_element_two_right_one, .grid_element_three_right_one {
     grid-column: 9 / 11;
     grid-row: 1 / 2;
+}
+
+.text_16 {
     font-size: 16px;
+}
+
+.text_16_grey {
+    font-size: 16px;
+    color: #979797;
 }
 
 .grid_element_two_right_two, .grid_element_three_right_two {
     grid-column: 9 / 11;
     grid-row: 2 / 5;
-    font-size: 16px;
 }
 
 .grid_element_two_right_three, .grid_element_three_right_three {
     grid-column: 9 / 11;
     grid-row: 7 / 8;
-    font-size: 16px;
 }
 
 .grid_element_two_right_four, .grid_element_three_right_four {
     grid-column: 9 / 11;
     grid-row: 8 / 11;
-    font-size: 16px;
 }
 
 .grid_element_two_year_top, .grid_element_three_year_top {
     grid-column: 12 / 13;
     grid-row: 1 / 2;
-    font-size: 16px;
     display: flex;
     justify-content: flex-end;
 }
@@ -288,7 +305,6 @@ body {
 .grid_element_two_year_bottom, .grid_element_three_year_bottom {
     grid-column: 12 / 13;
     grid-row: 7 / 8;
-    font-size: 16px;
     display: flex;
     justify-content: flex-end;
 }
@@ -300,24 +316,17 @@ body {
     align-items: center;
     max-height: 23px;
     margin-bottom: 47px;
+    padding-top: 110px;
+    border-top: 2px solid #D8D8D8;
 }
-
-/* .footer_social_links {
-    margin-left: 95px;
-} */
 
 .logo_social {
-    max-width: 15px;
-    max-height: 15px;
+    width: 15px;
+    height: 15px;
 }
-
-/* .link_social:nth-of-type(2) {
-    margin: 0 23px 0 23px;
-} */
 
 .navigation_list_footer {
     display: flex;
-    /* width: 50%; */
     align-items: flex-end;
     justify-items: flex-end;
 }
