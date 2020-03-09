@@ -210,7 +210,7 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    grid-gap: 10px;
+    grid-gap: 15px;
     width: 100%;
     max-height: 315px;
     margin-top: 148px;
@@ -265,11 +265,15 @@ body {
     grid-column: 12 / 13;
     grid-row: 1 / 2;
     font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .grid_element_two_year_bottom, .grid_element_three_year_bottom {
     grid-column: 12 / 13;
     grid-row: 7 / 8;
     font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
 }
 
